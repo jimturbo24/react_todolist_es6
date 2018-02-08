@@ -1,0 +1,9 @@
+form button {
+  margin-top: 10px;
+}
+li {
+  text-transform: capitalize;
+}
+li button {
+  margin-left: 50px;
+}
