@@ -46,6 +46,7 @@ class App extends Component {
         {...this.state}
         handleDelete={this.doDelete.bind(this)}
         handleEdit={this.doEdit.bind(this)} />
+        onDeleteSelect={id => this.doDelete({id})}
       </div>
     )
   }

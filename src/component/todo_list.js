@@ -8,6 +8,7 @@ class TodoList extends Component {
             return <li className="list-group-item" key={todo.id}>
             <span onClick={this.whenEdit.bind(this, todo)}>{todo.name}</span>
             <button onClick={this.whenDelete.bind(this, todo.id)} type="text" className="btn btn-danger">Delete</button>
+            <button onClick={() => onDeleteSelect(this.props.todo.id)} type="text" className="btn btn-danger">Delete</button>
             </li>
           })
         }
